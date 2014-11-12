@@ -1,8 +1,8 @@
 bot.modules.dunno = function(from, to, text, message) {
   var faces = [
-    "‾\(ツ)/‾",
-    "¯\(º_o)/¯",
-    "¯\_(シ)_/¯"
+    "‾\\(ツ)/‾",
+    "¯\\(º_o)/¯",
+    "¯\\_(シ)_/¯"
   ]
 
   bot.speak(faces[Math.floor(Math.random()*faces.length)]);

@@ -8,6 +8,8 @@ GLOBAL.fs = require('fs')
 var config = {
     botName: 'Wintermute',
     channel: '#wetfish',
+    testingChannel: '#testing',
+    channels: ['#wetfish', '#testing'],
     commandChar: '.',
     master: 'Weazzy',
     moduleDir: './modules/',
@@ -16,7 +18,7 @@ var config = {
 
 GLOBAL.bot = new irc.Client(config.server, config.botName, 
 			    {
-				channels: [config.channel], 
+				channels: config.channels, 
 				userName: config.botName, 
 				realName: config.botName, 
 				secure: true,
@@ -30,6 +32,9 @@ bot.modules.line = {}
 bot.last = []
 bot.speak = function(text) {
   bot.say(config.channel, text.slice(0,512));
+}
+bot.speak_test = function(text) {
+  bot.say(testingChannel, text.slice(0,512));
 }
 
 bot.unload_module = function(module) {

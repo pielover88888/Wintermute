@@ -11,7 +11,7 @@ var config = {
   commandChar: '.',
   master: 'Weazzy',
   moduleDir: './modules/',
-  server: 'irc.wetfish.net'
+    server: 'irc.wetfish.net',
   secure: false,
   selfSigned: true,
   autoRejoin: true,

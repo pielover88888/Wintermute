@@ -3,6 +3,10 @@ var url = require('url')
 var HTMLchars = {'&nbsp;':' ','&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#x27;':"'",'&apos;':"'",'&ndash;':'-','&mdash;':'-','&infin;':'∞','&raquo;':'»','&laquo;':'«','&middot;':'•','&hellip;':'...'}
 
 bot.modules.line.url = function(from, to, text, mes) {
+    if(from == "tumblrina") {
+	return;
+    };
+
   if(text.search(/\bhttps?:\/\/.*?\..*?\b/) !== -1) {
     if (text.search(/youtu((.be)|(be.com))/) !== -1) { return }
     var link = '' + text.match(/http\S*/)

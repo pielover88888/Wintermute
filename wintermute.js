@@ -7,7 +7,7 @@ GLOBAL.fs = require('fs')
 
 var config = {
     botName: 'Wintermute',
-    channels: ['#wetfish', '#testing'],
+    channel: '#wetfish',
     commandChar: '.',
     master: 'Weazzy',
     moduleDir: './modules/',
@@ -16,7 +16,7 @@ var config = {
 
 GLOBAL.bot = new irc.Client(config.server, config.botName, 
 			    {
-				channels: config.channels, 
+				channels: [config.channel], 
 				userName: config.botName, 
 				realName: config.botName, 
 				secure: true,

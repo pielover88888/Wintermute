@@ -1,6 +1,6 @@
 //Contacts an admin
 
-var admins = ["john", "spaghetti", "azathoth"];
+var admins = ["rachel", "Weazzy", "svchost"];
 
 bot.modules.admin = function(from, to, text, message) {
   if (text.length > 1) {

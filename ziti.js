@@ -6,21 +6,23 @@ GLOBAL.exec = require("child_process").exec
 GLOBAL.fs = require('fs')
 
 var config = {
-  botName: 'Wintermute',
-  channel: '#wetfish',
-  commandChar: '.',
-  master: 'Weazzy',
-  moduleDir: './modules/',
-    server: 'irc.wetfish.net',
-  secure: false,
-  selfSigned: true,
-  autoRejoin: true,
-  autoConnect: true
+    botName: 'Wintermute',
+    channel: '#wetfish',
+    commandChar: '.',
+    master: 'Weazzy',
+    moduleDir: './modules/',
+    server: 'irc.wetfish.net'
 }
 
-GLOBAL.bot = new irc.Client(config.server, config.botName, {
-  channels: [config.channel], userName: config.botName, realName: config.botName
-})
+GLOBAL.bot = new irc.Client(config.server, config.botName, 
+			    {
+				channels: [config.channel], 
+				userName: config.botName, 
+				realName: config.botName, 
+				secure: true,
+				selfSigned: true,
+				port: 6697
+			    })
 
 bot.config = config
 bot.modules = {}

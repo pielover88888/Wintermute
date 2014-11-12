@@ -1,0 +1,425 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'irc',
+1 verbose cli   'request',
+1 verbose cli   'http',
+1 verbose cli   'child_process',
+1 verbose cli   'fs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'irc', null ]
+6 verbose cache add name=undefined spec="irc" args=["irc",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'irc',
+7 verbose parsed url   path: 'irc',
+7 verbose parsed url   href: 'irc' }
+8 verbose cache add [ 'request', null ]
+9 verbose cache add name=undefined spec="request" args=["request",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'request',
+10 verbose parsed url   path: 'request',
+10 verbose parsed url   href: 'request' }
+11 verbose cache add [ 'http', null ]
+12 verbose cache add name=undefined spec="http" args=["http",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'http',
+13 verbose parsed url   path: 'http',
+13 verbose parsed url   href: 'http' }
+14 verbose cache add [ 'child_process', null ]
+15 verbose cache add name=undefined spec="child_process" args=["child_process",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'child_process',
+16 verbose parsed url   path: 'child_process',
+16 verbose parsed url   href: 'child_process' }
+17 verbose cache add [ 'fs', null ]
+18 verbose cache add name=undefined spec="fs" args=["fs",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'fs',
+19 verbose parsed url   path: 'fs',
+19 verbose parsed url   href: 'fs' }
+20 silly lockFile d16bf115-irc irc
+21 verbose lock irc /home/epers/.npm/d16bf115-irc.lock
+22 silly lockFile 088e29b0-request request
+23 verbose lock request /home/epers/.npm/088e29b0-request.lock
+24 silly lockFile 77b5f8e3-http http
+25 verbose lock http /home/epers/.npm/77b5f8e3-http.lock
+26 silly lockFile 4845fa97-child-process child_process
+27 verbose lock child_process /home/epers/.npm/4845fa97-child-process.lock
+28 silly lockFile 3f4bb586-fs fs
+29 verbose lock fs /home/epers/.npm/3f4bb586-fs.lock
+30 silly lockFile d16bf115-irc irc
+31 silly lockFile d16bf115-irc irc
+32 silly lockFile 088e29b0-request request
+33 silly lockFile 088e29b0-request request
+34 silly lockFile 77b5f8e3-http http
+35 silly lockFile 77b5f8e3-http http
+36 silly lockFile 4845fa97-child-process child_process
+37 silly lockFile 4845fa97-child-process child_process
+38 silly lockFile 3f4bb586-fs fs
+39 silly lockFile 3f4bb586-fs fs
+40 verbose addNamed [ 'irc', '' ]
+41 verbose addNamed [ null, '*' ]
+42 silly lockFile b194c140-irc irc@
+43 verbose lock irc@ /home/epers/.npm/b194c140-irc.lock
+44 verbose addNamed [ 'request', '' ]
+45 verbose addNamed [ null, '*' ]
+46 silly lockFile 9d461bcf-request request@
+47 verbose lock request@ /home/epers/.npm/9d461bcf-request.lock
+48 verbose addNamed [ 'http', '' ]
+49 verbose addNamed [ null, '*' ]
+50 silly lockFile c1086ff9-http http@
+51 verbose lock http@ /home/epers/.npm/c1086ff9-http.lock
+52 verbose addNamed [ 'child_process', '' ]
+53 verbose addNamed [ null, '*' ]
+54 silly lockFile 512a7ef6-child-process child_process@
+55 verbose lock child_process@ /home/epers/.npm/512a7ef6-child-process.lock
+56 verbose addNamed [ 'fs', '' ]
+57 verbose addNamed [ null, '*' ]
+58 silly lockFile a107b96b-fs fs@
+59 verbose lock fs@ /home/epers/.npm/a107b96b-fs.lock
+60 silly addNameRange { name: 'irc', range: '*', hasData: false }
+61 silly addNameRange { name: 'request', range: '*', hasData: false }
+62 silly addNameRange { name: 'http', range: '*', hasData: false }
+63 silly addNameRange { name: 'child_process', range: '*', hasData: false }
+64 silly addNameRange { name: 'fs', range: '*', hasData: false }
+65 verbose request where is /child_process
+66 verbose request registry https://registry.npmjs.org/
+67 verbose request id 5a23ed3791ab80d5
+68 verbose url raw /child_process
+69 verbose url resolving [ 'https://registry.npmjs.org/', './child_process' ]
+70 verbose url resolved https://registry.npmjs.org/child_process
+71 verbose request where is https://registry.npmjs.org/child_process
+72 info trying registry request attempt 1 at 07:37:58
+73 http GET https://registry.npmjs.org/child_process
+74 verbose request where is /irc
+75 verbose request registry https://registry.npmjs.org/
+76 verbose url raw /irc
+77 verbose url resolving [ 'https://registry.npmjs.org/', './irc' ]
+78 verbose url resolved https://registry.npmjs.org/irc
+79 verbose request where is https://registry.npmjs.org/irc
+80 info trying registry request attempt 1 at 07:37:58
+81 verbose etag "4YKUTH90OH53XZ1FIK93TTLQN"
+82 http GET https://registry.npmjs.org/irc
+83 verbose request where is /request
+84 verbose request registry https://registry.npmjs.org/
+85 verbose url raw /request
+86 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+87 verbose url resolved https://registry.npmjs.org/request
+88 verbose request where is https://registry.npmjs.org/request
+89 info trying registry request attempt 1 at 07:37:58
+90 verbose etag "6COE7GX8LA0OE6459XUVBMUD3"
+91 http GET https://registry.npmjs.org/request
+92 verbose request where is /http
+93 verbose request registry https://registry.npmjs.org/
+94 verbose url raw /http
+95 verbose url resolving [ 'https://registry.npmjs.org/', './http' ]
+96 verbose url resolved https://registry.npmjs.org/http
+97 verbose request where is https://registry.npmjs.org/http
+98 info trying registry request attempt 1 at 07:37:58
+99 verbose etag "3RCYO05IYVNA6RS7FVYXTKVJ6"
+100 http GET https://registry.npmjs.org/http
+101 verbose request where is /fs
+102 verbose request registry https://registry.npmjs.org/
+103 verbose url raw /fs
+104 verbose url resolving [ 'https://registry.npmjs.org/', './fs' ]
+105 verbose url resolved https://registry.npmjs.org/fs
+106 verbose request where is https://registry.npmjs.org/fs
+107 info trying registry request attempt 1 at 07:37:58
+108 verbose etag "3UQWMMZD15TH5WUAUG7KMSL14"
+109 http GET https://registry.npmjs.org/fs
+110 http 304 https://registry.npmjs.org/irc
+111 silly registry.get cb [ 304,
+111 silly registry.get   { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+111 silly registry.get     server: 'Apache',
+111 silly registry.get     via: '1.1 varnish',
+111 silly registry.get     'last-modified': 'Wed, 12 Nov 2014 07:37:58 GMT',
+111 silly registry.get     'cache-control': 'max-age=60',
+111 silly registry.get     etag: '"4YKUTH90OH53XZ1FIK93TTLQN"',
+111 silly registry.get     age: '18',
+111 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+111 silly registry.get     'x-cache': 'HIT',
+111 silly registry.get     'x-cache-hits': '1',
+111 silly registry.get     'x-timer': 'S1415777878.506628,VS0,VE0',
+111 silly registry.get     vary: 'Accept',
+111 silly registry.get     'content-length': '0',
+111 silly registry.get     'keep-alive': 'timeout=10, max=50',
+111 silly registry.get     connection: 'Keep-Alive' } ]
+112 verbose etag https://registry.npmjs.org/irc from cache
+113 http 304 https://registry.npmjs.org/request
+114 silly registry.get cb [ 304,
+114 silly registry.get   { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+114 silly registry.get     server: 'Apache',
+114 silly registry.get     via: '1.1 varnish',
+114 silly registry.get     'last-modified': 'Wed, 12 Nov 2014 07:15:52 GMT',
+114 silly registry.get     'cache-control': 'max-age=60',
+114 silly registry.get     etag: '"6COE7GX8LA0OE6459XUVBMUD3"',
+114 silly registry.get     age: '44',
+114 silly registry.get     'x-served-by': 'cache-lcy1124-LCY',
+114 silly registry.get     'x-cache': 'HIT',
+114 silly registry.get     'x-cache-hits': '202',
+114 silly registry.get     'x-timer': 'S1415777878.510070,VS0,VE0',
+114 silly registry.get     vary: 'Accept',
+114 silly registry.get     'content-length': '0',
+114 silly registry.get     'keep-alive': 'timeout=10, max=50',
+114 silly registry.get     connection: 'Keep-Alive' } ]
+115 verbose etag https://registry.npmjs.org/request from cache
+116 http 304 https://registry.npmjs.org/http
+117 silly registry.get cb [ 304,
+117 silly registry.get   { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+117 silly registry.get     server: 'Apache',
+117 silly registry.get     via: '1.1 varnish',
+117 silly registry.get     'last-modified': 'Wed, 12 Nov 2014 07:37:58 GMT',
+117 silly registry.get     'cache-control': 'max-age=60',
+117 silly registry.get     etag: '"3RCYO05IYVNA6RS7FVYXTKVJ6"',
+117 silly registry.get     age: '18',
+117 silly registry.get     'x-served-by': 'cache-lcy1130-LCY',
+117 silly registry.get     'x-cache': 'HIT',
+117 silly registry.get     'x-cache-hits': '1',
+117 silly registry.get     'x-timer': 'S1415777878.514132,VS0,VE0',
+117 silly registry.get     vary: 'Accept',
+117 silly registry.get     'content-length': '0',
+117 silly registry.get     'keep-alive': 'timeout=10, max=50',
+117 silly registry.get     connection: 'Keep-Alive' } ]
+118 verbose etag https://registry.npmjs.org/http from cache
+119 silly addNameRange number 2 { name: 'irc', range: '*', hasData: true }
+120 silly addNameRange versions [ 'irc',
+120 silly addNameRange   [ '0.1.2',
+120 silly addNameRange     '0.2.0',
+120 silly addNameRange     '0.2.1',
+120 silly addNameRange     '0.3.0',
+120 silly addNameRange     '0.3.1',
+120 silly addNameRange     '0.3.2',
+120 silly addNameRange     '0.3.3',
+120 silly addNameRange     '0.3.4',
+120 silly addNameRange     '0.3.5',
+120 silly addNameRange     '0.3.6',
+120 silly addNameRange     '0.3.7' ] ]
+121 verbose addNamed [ 'irc', '0.3.7' ]
+122 verbose addNamed [ '0.3.7', '0.3.7' ]
+123 silly lockFile 9cf77c93-irc-0-3-7 irc@0.3.7
+124 verbose lock irc@0.3.7 /home/epers/.npm/9cf77c93-irc-0-3-7.lock
+125 silly addNameRange number 2 { name: 'http', range: '*', hasData: true }
+126 silly addNameRange versions [ 'http', [ '0.0.0' ] ]
+127 verbose addNamed [ 'http', '0.0.0' ]
+128 verbose addNamed [ '0.0.0', '0.0.0' ]
+129 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+130 verbose lock http@0.0.0 /home/epers/.npm/5c64bf45-http-0-0-0.lock
+131 silly addNameRange number 2 { name: 'request', range: '*', hasData: true }
+132 silly addNameRange versions [ 'request',
+132 silly addNameRange   [ '0.10.0',
+132 silly addNameRange     '0.8.3',
+132 silly addNameRange     '0.9.0',
+132 silly addNameRange     '0.9.1',
+132 silly addNameRange     '0.9.5',
+132 silly addNameRange     '1.0.0',
+132 silly addNameRange     '1.1.0',
+132 silly addNameRange     '1.1.1',
+132 silly addNameRange     '1.2.0',
+132 silly addNameRange     '1.9.0',
+132 silly addNameRange     '1.9.1',
+132 silly addNameRange     '1.9.2',
+132 silly addNameRange     '1.9.3',
+132 silly addNameRange     '1.9.5',
+132 silly addNameRange     '1.9.7',
+132 silly addNameRange     '1.9.8',
+132 silly addNameRange     '1.9.9',
+132 silly addNameRange     '2.0.0',
+132 silly addNameRange     '2.0.1',
+132 silly addNameRange     '2.0.2',
+132 silly addNameRange     '2.0.3',
+132 silly addNameRange     '2.0.4',
+132 silly addNameRange     '2.0.5',
+132 silly addNameRange     '2.1.0',
+132 silly addNameRange     '2.1.1',
+132 silly addNameRange     '2.2.0',
+132 silly addNameRange     '2.2.5',
+132 silly addNameRange     '2.2.6',
+132 silly addNameRange     '2.2.9',
+132 silly addNameRange     '2.9.0',
+132 silly addNameRange     '2.9.1',
+132 silly addNameRange     '2.9.2',
+132 silly addNameRange     '2.9.3',
+132 silly addNameRange     '2.9.100',
+132 silly addNameRange     '2.9.150',
+132 silly addNameRange     '2.9.151',
+132 silly addNameRange     '2.9.152',
+132 silly addNameRange     '2.9.153',
+132 silly addNameRange     '2.9.200',
+132 silly addNameRange     '2.9.201',
+132 silly addNameRange     '2.9.202',
+132 silly addNameRange     '2.9.203',
+132 silly addNameRange     '2.10.0',
+132 silly addNameRange     '2.11.0',
+132 silly addNameRange     '2.11.1',
+132 silly addNameRange     '2.11.2',
+132 silly addNameRange     '2.11.3',
+132 silly addNameRange     '2.11.4',
+132 silly addNameRange     '2.12.0',
+132 silly addNameRange     '2.14.0',
+132 silly addNameRange     '2.16.0',
+132 silly addNameRange     '2.16.2',
+132 silly addNameRange     '2.16.4',
+132 silly addNameRange     '2.16.6',
+132 silly addNameRange     '2.18.0',
+132 silly addNameRange     '2.19.0',
+132 silly addNameRange     '2.20.0',
+132 silly addNameRange     '2.21.0',
+132 silly addNameRange     '2.22.0',
+132 silly addNameRange     '2.23.0',
+132 silly addNameRange     '2.24.0',
+132 silly addNameRange     '2.25.0',
+132 silly addNameRange     '2.26.0',
+132 silly addNameRange     '2.27.0',
+132 silly addNameRange     '2.28.0',
+132 silly addNameRange     '2.29.0',
+132 silly addNameRange     '2.30.0',
+132 silly addNameRange     '2.31.0',
+132 silly addNameRange     '2.32.0',
+132 silly addNameRange     '2.33.0',
+132 silly addNameRange     '2.34.0',
+132 silly addNameRange     '2.35.0',
+132 silly addNameRange     '2.36.0',
+132 silly addNameRange     '2.37.0',
+132 silly addNameRange     '2.38.0',
+132 silly addNameRange     '2.39.0',
+132 silly addNameRange     '2.40.0',
+132 silly addNameRange     '2.41.0',
+132 silly addNameRange     '2.42.0',
+132 silly addNameRange     '2.43.0',
+132 silly addNameRange     '2.44.0',
+132 silly addNameRange     '2.45.0',
+132 silly addNameRange     '2.46.0',
+132 silly addNameRange     '2.47.0' ] ]
+133 verbose addNamed [ 'request', '2.47.0' ]
+134 verbose addNamed [ '2.47.0', '2.47.0' ]
+135 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+136 verbose lock request@2.47.0 /home/epers/.npm/6725db09-request-2-47-0.lock
+137 silly lockFile 9cf77c93-irc-0-3-7 irc@0.3.7
+138 silly lockFile 9cf77c93-irc-0-3-7 irc@0.3.7
+139 silly lockFile b194c140-irc irc@
+140 silly lockFile b194c140-irc irc@
+141 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+142 silly lockFile 5c64bf45-http-0-0-0 http@0.0.0
+143 silly lockFile c1086ff9-http http@
+144 silly lockFile c1086ff9-http http@
+145 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+146 silly lockFile 6725db09-request-2-47-0 request@2.47.0
+147 silly lockFile 9d461bcf-request request@
+148 silly lockFile 9d461bcf-request request@
+149 http 404 https://registry.npmjs.org/child_process
+150 verbose headers { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+150 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+150 verbose headers   'content-type': 'application/json',
+150 verbose headers   'cache-control': 'max-age=0',
+150 verbose headers   'content-length': '52',
+150 verbose headers   'accept-ranges': 'bytes',
+150 verbose headers   via: '1.1 varnish',
+150 verbose headers   age: '0',
+150 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+150 verbose headers   'x-cache': 'MISS',
+150 verbose headers   'x-cache-hits': '0',
+150 verbose headers   'x-timer': 'S1415777878.503297,VS0,VE92',
+150 verbose headers   'keep-alive': 'timeout=10, max=50',
+150 verbose headers   connection: 'Keep-Alive' }
+151 silly registry.get cb [ 404,
+151 silly registry.get   { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+151 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+151 silly registry.get     'content-type': 'application/json',
+151 silly registry.get     'cache-control': 'max-age=0',
+151 silly registry.get     'content-length': '52',
+151 silly registry.get     'accept-ranges': 'bytes',
+151 silly registry.get     via: '1.1 varnish',
+151 silly registry.get     age: '0',
+151 silly registry.get     'x-served-by': 'cache-lcy1129-LCY',
+151 silly registry.get     'x-cache': 'MISS',
+151 silly registry.get     'x-cache-hits': '0',
+151 silly registry.get     'x-timer': 'S1415777878.503297,VS0,VE92',
+151 silly registry.get     'keep-alive': 'timeout=10, max=50',
+151 silly registry.get     connection: 'Keep-Alive' } ]
+152 silly lockFile 512a7ef6-child-process child_process@
+153 silly lockFile 512a7ef6-child-process child_process@
+154 http 304 https://registry.npmjs.org/fs
+155 silly registry.get cb [ 304,
+155 silly registry.get   { date: 'Wed, 12 Nov 2014 07:37:58 GMT',
+155 silly registry.get     server: 'Apache',
+155 silly registry.get     via: '1.1 varnish',
+155 silly registry.get     'last-modified': 'Wed, 12 Nov 2014 07:37:58 GMT',
+155 silly registry.get     'cache-control': 'max-age=60',
+155 silly registry.get     etag: '"3UQWMMZD15TH5WUAUG7KMSL14"',
+155 silly registry.get     age: '0',
+155 silly registry.get     'x-served-by': 'cache-ams4137-AMS',
+155 silly registry.get     'x-cache': 'MISS',
+155 silly registry.get     'x-cache-hits': '0',
+155 silly registry.get     'x-timer': 'S1415777878.491639,VS0,VE382',
+155 silly registry.get     vary: 'Accept',
+155 silly registry.get     'content-length': '0',
+155 silly registry.get     'keep-alive': 'timeout=10, max=50',
+155 silly registry.get     connection: 'Keep-Alive' } ]
+156 verbose etag https://registry.npmjs.org/fs from cache
+157 silly addNameRange number 2 { name: 'fs', range: '*', hasData: true }
+158 silly addNameRange versions [ 'fs', [ '0.0.0', '0.0.2' ] ]
+159 verbose addNamed [ 'fs', '0.0.2' ]
+160 verbose addNamed [ '0.0.2', '0.0.2' ]
+161 silly lockFile afea0479-fs-0-0-2 fs@0.0.2
+162 verbose lock fs@0.0.2 /home/epers/.npm/afea0479-fs-0-0-2.lock
+163 silly lockFile afea0479-fs-0-0-2 fs@0.0.2
+164 silly lockFile afea0479-fs-0-0-2 fs@0.0.2
+165 silly lockFile a107b96b-fs fs@
+166 silly lockFile a107b96b-fs fs@
+167 error 404 404 Not Found: child_process
+167 error 404
+167 error 404 'child_process' is not in the npm registry.
+167 error 404 You should bug the author to publish it
+167 error 404
+167 error 404 Note that you can also install from a
+167 error 404 tarball, folder, or http url, or git url.
+168 error System Linux 3.2.0-4-amd64
+169 error command "/usr/bin/node" "/usr/bin/npm" "install" "irc" "request" "http" "child_process" "fs"
+170 error cwd /home/epers/wintermute
+171 error node -v v0.10.33
+172 error npm -v 1.4.28
+173 error code E404
+174 verbose exit [ 1, true ]

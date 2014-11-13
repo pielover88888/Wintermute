@@ -5,10 +5,10 @@ bot.modules.unload = function(from, to, text, message) {
       for (i in to_unload) {
         bot.unload_module(to_unload[i]);
       }
-      bot.speak_testing('\u000303Unloaded module' + ((text.split(' ').length>1)?'s':'') + ' \u000f[\u000310' + text.replace(/ /g, ', ') + '\u000f]')
+      bot.speak_admin('\u000303Unloaded module' + ((text.split(' ').length>1)?'s':'') + ' \u000f[\u000310' + text.replace(/ /g, ', ') + '\u000f]')
     } catch(err) {
       console.log('Error unloading module [' + text + ']')
-      bot.speak_testing('\u000304Error unloading module \u000f[\u000310' + text + '\u000f]')
+      bot.speak_admin('\u000304Error unloading module \u000f[\u000310' + text + '\u000f]')
     }
   }
 }
@@ -20,10 +20,10 @@ bot.modules.load = function(from, to, text, message) {
       for (i in to_load) {
         bot.load_module(to_load[i]);
       }
-      bot.speak_testing('\u000303Loaded module' + ((text.split(' ').length>1)?'s':'') + ' \u000f[\u000310' + text.replace(/ /g, ', ') + '\u000f]')
+      bot.speak_admin('\u000303Loaded module' + ((text.split(' ').length>1)?'s':'') + ' \u000f[\u000310' + text.replace(/ /g, ', ') + '\u000f]')
     } catch(err) {
       console.log('Error loading module [' + text + ']')
-      bot.speak_testing('\u000304Error loading module \u000f[\u000310' + text + '\u000f]')
+      bot.speak_admin('\u000304Error loading module \u000f[\u000310' + text + '\u000f]')
     }
   }
 }

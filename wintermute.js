@@ -33,7 +33,7 @@ bot.last = []
 bot.speak = function(text) {
   bot.say(config.channel, text.slice(0,512));
 }
-bot.speak_test = function(text) {
+bot.speak_admin = function(text) {
   bot.say(config.testingChannel, text.slice(0,512));
 }
 

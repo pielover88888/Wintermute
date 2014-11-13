@@ -8,7 +8,7 @@ GLOBAL.fs = require('fs')
 var config = {
     botName: 'Wintermute',
     channel: '#wetfish',
-    testingChannel: '#testing',
+    testingChannel: '#wintermute',
     channels: ['#wetfish', '#testing'],
     commandChar: '.',
     master: 'Weazzy',

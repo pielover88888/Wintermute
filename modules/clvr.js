@@ -3,7 +3,8 @@ bot.modules.clvr = function(from, to, text, message) {
   var CBots = [new Cleverbot,new Cleverbot]
   , i = 0
   , callback = function callback(resp){
-    CBots[i].write(resp['text'],callback);
-    bot.speak_test(resp['text']);
+    CBots[i].write(resp['msg'],callback);
+    bot.speak_test(resp['msg']);
   };
+  callback({msg:text});
 }

@@ -1,10 +1,13 @@
 bot.modules.clvr = function(from, to, text, message) {
-  var Cleverbot = require('cleverbot-node');
-  var CBots = [new Cleverbot,new Cleverbot]
-  , i = 0
-  , callback = function callback(resp){
-    CBots[i].write(resp['msg'],callback);
-    bot.speak_test(resp['msg']);
-  };
-  callback({msg:text});
-}
+
+  bot.speak_test("a");
+  var CleverBot = new require('cleverbot-node')
+    , clever = new CleverBot()
+
+    clever.write(text, function(data) {
+      bot.speak_test("d");
+      var resp = data.message;
+      protection.remember(from, resp);
+      bot.speak_test(resp);
+    });
+};

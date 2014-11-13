@@ -9,7 +9,7 @@ var config = {
     botName: 'Wintermute',
     channel: '#wetfish',
     testingChannel: '#wintermute',
-    channels: ['#wetfish', '#testing'],
+    channels: ['#wetfish', '#wintermute'],
     commandChar: '.',
     master: 'Weazzy',
     moduleDir: './modules/',

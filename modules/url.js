@@ -1,9 +1,9 @@
 var url = require('url')
 
-var HTMLchars = {'&nbsp;':' ','&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#x27;':"'",'&apos;':"'",'&ndash;':'-','&mdash;':'-','&infin;':'∞','&raquo;':'»','&laquo;':'«','&middot;':'•','&hellip;':'...'}
+var HTMLchars = {'&reg':'®','&nbsp;':' ','&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#x27;':"'",'&apos;':"'",'&ndash;':'-','&mdash;':'-','&infin;':'∞','&raquo;':'»','&laquo;':'«','&middot;':'•','&hellip;':'...'}
 
 bot.modules.line.url = function(from, to, text, mes) {
-    if(from == "tumblrina") {
+    if(from == "denice" || from == "tumblrina" || from == "fishy") {
 	return;
     };
 

@@ -16,11 +16,11 @@ var config = {
     server: 'irc.wetfish.net'
 }
 
-GLOBAL.bot = new irc.Client(config.server, config.botName, 
+GLOBAL.bot = new irc.Client(config.server, config.botName,
 			    {
-				channels: config.channels, 
-				userName: config.botName, 
-				realName: config.botName, 
+				channels: config.channels,
+				userName: config.botName,
+				realName: config.botName,
 				secure: true,
 				selfSigned: true,
 				port: 6697
@@ -34,7 +34,7 @@ bot.speak = function(text) {
   bot.say(config.channel, text.slice(0,512));
 }
 bot.speak_test = function(text) {
-  bot.say(testingChannel, text.slice(0,512));
+  bot.say(config.testingChannel, text.slice(0,512));
 }
 
 bot.unload_module = function(module) {

@@ -37,6 +37,10 @@ bot.speak_admin = function(text) {
   bot.say(config.testingChannel, text.slice(0,512));
 }
 
+bot.speak2 = function(to, text) {
+  bot.say(to, text.slice(0,512));
+}
+
 bot.unload_module = function(module) {
   var mod_path = bot.config.moduleDir + module + '.js';
   if (require.cache[require.resolve(mod_path)]) delete require.cache[require.resolve(mod_path)];

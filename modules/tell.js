@@ -14,11 +14,16 @@ bot.modules.line.tell = function(from, to, text, message) {
       bot.speak(from + ": " + irc.colors.wrap("cyan", messages[from.toLowerCase()][i].mes) + irc.colors.wrap("yellow", ' (' + messages[from.toLowerCase()][i].from + ') ') + irc.colors.wrap("light_blue", '[' + readableTime(Date.now()-messages[from.toLowerCase()][i].when) + ']'));
     }
     delete messages[from.toLowerCase()]
-    fs.writeFileSync('./db/tell', JSON.stringify(messages)); 
+    fs.writeFileSync('./db/tell', JSON.stringify(messages));
   }
 };
 
 bot.modules.tell = function(from, to, text, message) {
+  // ignore the other bots, make this a config one day
+  if(from == "denice" || from == "tumblrina" || from == "fishy") {
+return;
+  };
+
   if (from.indexOf('telmac') != -1) return
   var commands = text.split(' ');
   if (bot.ignore && bot.ignore[from] && bot.ignore[from].indexOf(commands[0]) != -1) {

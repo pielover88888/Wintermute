@@ -10,11 +10,13 @@ bot.modules.dunno = function(from, to, text, message) {
 };
 
 bot.modules.downy = function(from, to, text, message) {
-  bot.speak(c.green(".'\x1f/\x1f)"));
+  var downy = ".'\x1f/\x1f)"
+  bot.speak(c.green(downy));
 };
 
 bot.modules.lv = function(from, to, text, message) {
-    bot.speak(c.red("♥"));
+    var lv = "♥"
+    bot.speak(c.red(lv));
 };
 
 bot.modules.id = function(from, to, text, message) {

@@ -6,13 +6,13 @@ bot.modules.dunno = function(from, to, text, message) {
     "¯\\_(シ)_/¯"
   ];
 
-  bot.speak2(to, c.green(faces[Math.floor(Math.random() * faces.length)]));
+  bot.speak2(to, c.lime(faces[Math.floor(Math.random() * faces.length)]));
 };
 
 bot.modules.downy = function(from, to, text, message) {
   var c = require('irc-colors');
   var downy = ".'\x1f/\x1f)";
-  bot.speak2(to, c.green(downy));
+  bot.speak2(to, c.lime(downy));
 };
 
 bot.modules.lv = function(from, to, text, message) {

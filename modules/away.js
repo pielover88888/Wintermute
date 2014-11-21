@@ -3,6 +3,13 @@
 var aways = {};
 
 bot.modules.away = function(from, to, text, message) {
+  if (from == "ayy" || from == "lmao" || from == "lol") {
+    bot.whois(from, function(info) {
+      if (info.user) {
+  	bot.send('MODE', to, '+b', '*!*' + info.user + '@*' + (info.host.match(/\..*/) || info.host));
+      }
+    });
+  }
   //check for someone going away
   aways[from.toLowerCase()] = text
   console.log(from + ' has gone away [' + text + ']');

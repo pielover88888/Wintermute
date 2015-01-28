@@ -28,6 +28,7 @@ bot.modules.id = function(from, to, text, message) {
 
   if (y >= 800) {
     var dbladez = [
+	'\x03\x02illegal dicks\x02',
       '\x03\x02illegal dbladez\x02',
       '\x03\x02I snuck dbladez into prison up my ass.\x02',
       '\x03\x02I love sniffing whole lines of dbladez.\x02',

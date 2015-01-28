@@ -19,11 +19,6 @@ bot.modules.line.tell = function(from, to, text, message) {
 };
 
 bot.modules.tell = function(from, to, text, message) {
-  // ignore the other bots, make this a config one day
-  if(from == "denice" || from == "tumblrina" || from == "fishy") {
-return;
-  };
-
   if (from.indexOf('telmac') != -1) return
   var commands = text.split(' ');
   if (bot.ignore && bot.ignore[from] && bot.ignore[from].indexOf(commands[0]) != -1) {

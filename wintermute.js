@@ -20,7 +20,7 @@ GLOBAL.bot = new irc.Client(config.server, config.botName,
 			    {
 				channels: config.channels,
 				userName: config.botName,
-				realName: config.botName,
+				realName: config.botName + ' clone of Wintermute, tweaked by pielover88888',
                                 secure: true,
 				selfSigned: true,
                                 port: 6697

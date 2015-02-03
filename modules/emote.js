@@ -60,7 +60,7 @@ bot.modules.line.xD = function(from, to, text, message) {
   var c = require('irc-colors');
 if (from == "fishy") {
  var y = ~~(Math.random() * 100);
-    if (y < 21) {
+    if (y < 40) {
     var hatename = "fishy";
         var xd = ['great one ' + hatename, 'B====Dongs, ' + hatename + '!', 'encore, encore! ' + hatename, 'lol ' + hatename , hatename + ', move along good sir'];
         bot.speak2(to, xd[x]);
@@ -76,7 +76,7 @@ if (from == "fishy") {
       bot.speak2(to, "loves and waffles,");
       bot.speak2(to, "t3h PeNgU1N oF d00m");
     } else {
-      if (y < 21) {
+      if (y < 14) {
 var hatename = "dsockwell";
         var xd = ['mmm <3<3<3 you ' + hatename, 'great point, ' + hatename, "I bet he didn't see that coming, " + hatename, 'oh my, getting serious ' + hatename + '?' , hatename + ', we is all friends here.'];
         bot.speak2(to, xd[x]);

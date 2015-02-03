@@ -58,7 +58,7 @@ bot.modules.ld = function(from, to, text, message) {
 
 bot.modules.line.xD = function(from, to, text, message) {
   var c = require('irc-colors');
-  if (from == "denice") {
+  if (from == "dsockwell") {
     var x = ~~(Math.random() * 4) + 0;
    // var y = ~~(Math.random() * 99) + 0;
      var y = ~~(Math.random() * 100);
@@ -68,7 +68,8 @@ bot.modules.line.xD = function(from, to, text, message) {
       bot.speak2(to, "t3h PeNgU1N oF d00m");
     } else {
       if (y < 21) {
-        var xd = ['shut up denice', 'omg shut up denice', 'GO AWAY DENICE', 'ffff denice', 'denice, please go away'];
+var hatename = "dsockwell";
+        var xd = ['shut up ' + hatename, 'omg shut up ' + hatename, 'go away dsockwell', 'ffff ' + hatename , hatename + ', please go away'];
         bot.speak2(to, xd[x]);
       }
     }

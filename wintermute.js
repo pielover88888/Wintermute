@@ -6,7 +6,7 @@ GLOBAL.exec = require("child_process").exec
 GLOBAL.fs = require('fs')
 
 var config = {
-    botName: 'iHateDsock',
+    botName: 'iLoveEverything',
     channel: '#wetfish',
     testingChannel: '#wintermute',
     channels: ['#wetfish', '#wintermute'],

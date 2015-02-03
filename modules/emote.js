@@ -78,7 +78,7 @@ if (from == "fishy") {
     } else {
       if (y < 21) {
 var hatename = "dsockwell";
-        var xd = ['shut up ' + hatename, 'omg shut up ' + hatename, 'go away ' + hatename, 'ffff ' + hatename , hatename + ', please go away'];
+        var xd = ['mmm <3<3<3 you ' + hatename, 'great point, ' + hatename, "I bet he didn't see that coming, " + hatename, 'oh my, getting serious ' + hatename + '?' , hatename + ', we is all friends here.'];
         bot.speak2(to, xd[x]);
       }
     }

@@ -6,14 +6,14 @@ GLOBAL.exec = require("child_process").exec
 GLOBAL.fs = require('fs')
 
 var config = {
-    botName: 'Wintermute',
+    botName: 'iHateDenice',
     channel: '#wetfish',
     testingChannel: '#wintermute',
     channels: ['#wetfish', '#wintermute'],
-    commandChar: '.',
-    master: 'Weazzy',
+    commandChar: '{',
+    master: 'pielover88888',
     moduleDir: './modules/',
-    server: 'irc.wetfish.net'
+    server: 'irc.remx25.com'
 }
 
 GLOBAL.bot = new irc.Client(config.server, config.botName,
@@ -21,9 +21,9 @@ GLOBAL.bot = new irc.Client(config.server, config.botName,
 				channels: config.channels,
 				userName: config.botName,
 				realName: config.botName,
-				secure: true,
+                                secure: true,
 				selfSigned: true,
-				port: 6697
+                                port: 6697
 			    })
 
 bot.config = config
@@ -79,10 +79,15 @@ bot.check_database = function(subdb) {
     }
   });
 }
-
+     var itt = "1"
 bot.addListener("message", function(from, to, text, message) {
   for (i in bot.modules.line) {
     bot.modules.line[i](from, to, text, message)
+    
+    //if(i === "1") {
+    //var i = "90"
+    //bot.speak("Yo")
+    //}
   }
   if (text.slice(0, config.commandChar.length) === config.commandChar) {
     var command = text.slice(config.commandChar.length).split(' ')[0];

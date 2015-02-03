@@ -58,6 +58,15 @@ bot.modules.ld = function(from, to, text, message) {
 
 bot.modules.line.xD = function(from, to, text, message) {
   var c = require('irc-colors');
+if (from == "fishy") {
+ var y = ~~(Math.random() * 100);
+    if (y < 21) {
+    var hatename = "fishy";
+        var xd = ['great one ' + hatename, 'B====Dongs, ' + hatename + '!', 'encore, encore! ' + hatename, 'lol ' + hatename , hatename + ', move along good sir'];
+        bot.speak2(to, xd[x]);
+    }
+}
+  //
   if (from == "dsockwell") {
     var x = ~~(Math.random() * 4) + 0;
    // var y = ~~(Math.random() * 99) + 0;

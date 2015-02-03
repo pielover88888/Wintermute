@@ -69,7 +69,7 @@ bot.modules.line.xD = function(from, to, text, message) {
     } else {
       if (y < 21) {
 var hatename = "dsockwell";
-        var xd = ['shut up ' + hatename, 'omg shut up ' + hatename, 'go away dsockwell', 'ffff ' + hatename , hatename + ', please go away'];
+        var xd = ['shut up ' + hatename, 'omg shut up ' + hatename, 'go away ' + hatename, 'ffff ' + hatename , hatename + ', please go away'];
         bot.speak2(to, xd[x]);
       }
     }

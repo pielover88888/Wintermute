@@ -58,17 +58,18 @@ bot.modules.ld = function(from, to, text, message) {
 
 bot.modules.line.xD = function(from, to, text, message) {
   var c = require('irc-colors');
-if (from == "fishy") {
+if (from == "denice") {
+ var x = ~~(Math.random() * 4) + 0;
  var y = ~~(Math.random() * 100);
     if (y < 40) {
-    var hatename = "fishy";
+    var hatename = "denice";
         var xd = ['great one ' + hatename, 'B====Dongs, ' + hatename + '!', 'encore, encore! ' + hatename, 'lol ' + hatename , hatename + ', move along good sir'];
         bot.speak2(to, xd[x]);
     }
 }
   //
   if (from == "dsockwell") {
-    var x = ~~(Math.random() * 4) + 0;
+    var x = ~~(Math.random() * 6) + 0;
    // var y = ~~(Math.random() * 99) + 0;
      var y = ~~(Math.random() * 100);
     if (y == 99) {
@@ -76,9 +77,9 @@ if (from == "fishy") {
       bot.speak2(to, "loves and waffles,");
       bot.speak2(to, "t3h PeNgU1N oF d00m");
     } else {
-      if (y < 14) {
+      if (y < 54) {
 var hatename = "dsockwell";
-        var xd = ['mmm <3<3<3 you ' + hatename, 'great point, ' + hatename, "I bet he didn't see that coming, " + hatename, 'oh my, getting serious ' + hatename + '?' , hatename + ', we is all friends here.'];
+        var xd = ['Thanks for contributing, ' + hatename, '<3 <3, ' + hatename, "That was my idea, " + hatename, 'And they called him dsuckwell, because he sucked d well ' + hatename + '?' , hatename + ', we is all friends here.'];
         bot.speak2(to, xd[x]);
       }
     }
